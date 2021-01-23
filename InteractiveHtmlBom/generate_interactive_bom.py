@@ -14,7 +14,7 @@ def to_utf(s):
         return s
 
 
-if __name__ == "__main__":
+def main():
     # Add ../ to the path
     # Works if this script is executed without installing the module
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -55,3 +55,7 @@ if __name__ == "__main__":
     else:
         config.set_from_args(args)
         ibom.main(parser, config, logger)
+
+
+if __name__ == "__main__":
+    main()
